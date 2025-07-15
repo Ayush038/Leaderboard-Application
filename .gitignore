@@ -1,0 +1,33 @@
+# ---------------------
+# Global
+# ---------------------
+.DS_Store
+Thumbs.db
+*.log
+logs/
+.vscode/
+.idea/
+
+# ---------------------
+# React App (Client)
+/Leaderboard_Client/leaderboard-application/node_modules/
+/Leaderboard_Client/leaderboard-application/.pnp
+/Leaderboard_Client/leaderboard-application.pnp.js
+/Leaderboard_Client/leaderboard-application/coverage
+/Leaderboard_Client/leaderboard-application/build
+/Leaderboard_Client/leaderboard-application/.env
+
+/Leaderboard_Client/leaderboard-application/.env.local
+/Leaderboard_Client/leaderboard-application/.env.development.local
+/Leaderboard_Client/leaderboard-application/.env.test.local
+/Leaderboard_Client/leaderboard-application/.env.production.local
+
+/Leaderboard_Client/leaderboard-application/npm-debug.log*
+/Leaderboard_Client/leaderboard-application/yarn-debug.log*
+/Leaderboard_Client/leaderboard-application/yarn-error.log*
+
+# ---------------------
+# Node.js Server
+/Leaderboard_Server/node_modules/
+/Leaderboard_Server/.env
+/Leaderboard_Server/logs/

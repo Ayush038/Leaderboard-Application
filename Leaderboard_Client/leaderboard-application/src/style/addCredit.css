@@ -1,0 +1,75 @@
+.add-credit-panel {
+  padding: 2rem;
+  text-align: center;
+}
+
+.add-credit-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.user-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.user-info .point{
+  color: white;
+}
+
+
+
+.user-credit-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.user-credit-card.selected {
+  border: 2px solid #4e71ff;
+  box-shadow: 0 0 12px #4e71ff;
+  transform: scale(1.03);
+  transition: all 0.2s ease;
+}
+
+.credit-action {
+  margin-top: 2rem;
+}
+
+.user-credit-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.user-credit-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.user-credit-card button {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.user-credit-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.claim-message {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #444;
+}

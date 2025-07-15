@@ -1,0 +1,23 @@
+.glow-button {
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background: linear-gradient(to right, #4e71ff, #8dd8ff);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 8px #4e71ff;
+}
+
+.glow-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #4e71ff, 0 0 25px #8dd8ff;
+}
+
+.glow-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

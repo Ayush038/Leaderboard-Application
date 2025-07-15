@@ -1,0 +1,64 @@
+.flip-wrapper {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.flip-wrapper .card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Default: Leaderboard */
+.flip-wrapper.leaderboard .card {
+  transform: rotateY(0deg);
+}
+
+/* Flip left to AddUser */
+.flip-wrapper.addUser .card {
+  transform: rotateY(-180deg);
+}
+
+/* Flip right to AddCredit */
+.flip-wrapper.addCredit .card {
+  transform: rotateY(180deg);
+}
+
+.card > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Show only relevant face */
+.flip-wrapper.leaderboard .front,
+.flip-wrapper.addUser .left,
+.flip-wrapper.addCredit .right {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/* Front face */
+.front {
+  transform: rotateY(0deg);
+}
+
+/* Left face */
+.left {
+  transform: rotateY(-180deg);
+}
+
+/* Right face */
+.right {
+  transform: rotateY(180deg);
+}
